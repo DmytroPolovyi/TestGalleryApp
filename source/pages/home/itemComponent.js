@@ -19,6 +19,8 @@ const TextComponent = ({text, propsText}) => {
   return <Text style={{fontWeight: 'bold'}}>{text} <Text style={{fontWeight: 'normal'}}>{propsText}</Text></Text>
 };
 
+//Flexbox
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

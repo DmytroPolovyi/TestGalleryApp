@@ -7,6 +7,8 @@ import Store from './reduxStore'
 import HomePage from './pages/home';
 import PhotoPage from './pages/photoPage';
 
+// React Navigation
+
 const Router = createStackNavigator(
   {
     Home: {

@@ -12,7 +12,7 @@ export const app = (state = initialState, action) => {
     case FETCH_ALL_DATA:
       return {
         ...state,
-        data: [...Object.values(action.data)]
+        data: [...Object.values(action.data)] //es6
       };
     case INITIALIZED_SUCCESS:
       return {
@@ -32,7 +32,7 @@ const dataFetch = data => ({
 const initializedSuccess = () =>({
   type: INITIALIZED_SUCCESS
 });
-
+// Redux Thunk
 export const getDataThunk = () => async (dispatch) => {
   let responce = await GalleryAPI.getData();
   dispatch(dataFetch(responce.data));
